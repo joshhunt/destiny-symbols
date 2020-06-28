@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Destiny_Keys";
+  src: url("/fonts/Destiny_Keys.otf");
+}
+
+@font-face {
+  font-family: "Destiny_Symbols_360";
+  src: url("/fonts/Destiny_Symbols_360.ttf");
+}
+
+@font-face {
+  font-family: "Destiny_Symbols_PC";
+  src: url("/fonts/Destiny_Symbols_PC.otf");
+}
+
+@font-face {
+  font-family: "Destiny_Symbols_PS4";
+  src: url("/fonts/Destiny_Symbols_PS4.otf");
+}
+
+@font-face {
+  font-family: "Destiny_Symbols_Stadia";
+  src: url("/fonts/Destiny_Symbols_Stadia.otf");
+}
+
+@font-face {
+  font-family: "Destiny_Symbols_Steam";
+  src: url("/fonts/Destiny_Symbols_Steam.otf");
+}
+
+@font-face {
+  font-family: "Destiny_Symbols_Xbox_ONE";
+  src: url("/fonts/Destiny_Symbols_Xbox_ONE.otf");
+}
+
+html {
+  /* font-family: "Fira Mono", monospace; */
+  font-family: "Fira Mono", "Destiny_Keys", "Destiny_Symbols_360",
+    "Destiny_Symbols_PC", "Destiny_Symbols_PS4", "Destiny_Symbols_Stadia",
+    "Destiny_Symbols_Steam", "Destiny_Symbols_Xbox_ONE", monospace;
+  background: #202124;
+  color: white;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 10px;
+}
+
+.symbol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: 50ms ease-in-out;
+}
+
+.symbol:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+pre {
+  font-family: inherit;
+}
+
+.list {
+  font-size: 13px;
+}
+
+.symbol-glyph {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.symbol-url {
+  font-size: 0.8em;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+thead {
+  font-weight: bold;
+}
+
+td {
+  padding: 5px;
+}
+
+.textbox {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: inherit;
+  font-family: inherit;
+  padding: 5px;
+  appearance: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.results {
+  width: 100%;
+  background: black;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.result:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.search {
+  position: relative;
+}
